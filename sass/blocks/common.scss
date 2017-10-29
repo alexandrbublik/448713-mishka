@@ -64,3 +64,7 @@ $desktop-content-width: 1050px;
   border-top: none;
   transform: rotate(45deg);
 }
+
+@mixin hover {
+  border-color: $control-color;
+}

@@ -78,15 +78,31 @@
     </ul>
   </section>
   <section class="main-content__section media">
-    <h2 class="media__title">Процесс производства</h2>
+    <span class="media__icon"></span>
     <video src="" class="media__content" poster="img/video-mobile@1x.jpg"></video>
     <div class="media__description">
+      <h2 class="media__title">Процесс производства</h2>
       <p class="media__promo">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как
         появляются наши товары.</p>
-      <a href="form.html" class="media__button site-button">сделать заказ</a>
+      <a href="form.html" class="media__button site-button site-button">сделать заказ</a>
     </div>
   </section>
 </main>
+<div class="modal">
+  <h2 class="modal__title">добавить в корзину</h2>
+  <p class="modal__promo">Выберите размер</p>
+  <form class="modal__form">
+    <fieldset class="modal__radio-group">
+      <input type="radio" name="size" id="s-size" class="modal__radio visually-hidden" checked>
+      <label for="s-size" class="modal__label">S</label>
+      <input type="radio" name="size" id="m-size" class="modal__radio visually-hidden">
+      <label for="m-size" class="modal__label">M</label>
+      <input type="radio" name="size" id="l-size" class="modal__radio visually-hidden">
+      <label for="l-size" class="modal__label">L</label>
+    </fieldset>
+    <input type="submit" class="modal__button" value="добавить">
+  </form>
+</div>
 <!--site footer part -->
 <footer class="site-footer">
   <div class="site-footer__container">

@@ -2,6 +2,10 @@
   text-decoration: none;
   display: block;
   width: $mobile-content-width;
+
+  &:hover > .card__description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .card__image {
@@ -49,6 +53,10 @@
     display: flex;
     width: auto;
     min-height: 335px;
+
+    &:hover > .card__description {
+      box-shadow: 6px 0 10px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .card__image {
@@ -87,6 +95,18 @@
   .card {
     display: block;
     flex-basis: 316px;
+
+    &:hover > .card__description {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    &:hover .card__title {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active .card__title {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 
   .card__image {

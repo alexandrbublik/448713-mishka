@@ -13,10 +13,18 @@
 
   &:first-of-type {
     background-color: $decor-color;
+
+    &:hover {
+      background-color: #59d5bc;
+    }
   }
 
   &:last-of-type {
     background-color: #56c3b2;
+
+    &:hover {
+      background-color: #46c1ae;
+    }
   }
 }
 

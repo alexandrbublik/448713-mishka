@@ -30,6 +30,14 @@
     padding: 18px 0;
     padding-left: 0;
     background: none;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
   }
 }
 

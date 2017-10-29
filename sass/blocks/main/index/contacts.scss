@@ -36,6 +36,14 @@
   text-decoration: none;
   color: $text-color;
   border-bottom: 1px solid $decor-color;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .contacts__map {
@@ -68,6 +76,17 @@
   .contacts__title {
     margin-top: 60px;
     margin-bottom: 49px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 47px;
+      height: 81px;
+      position: absolute;
+      top: -15px;
+      right: 52px;
+      background-image: url("../img/icon-flag.svg");
+    }
   }
 
   .contacts__variants {
@@ -113,6 +132,14 @@
   .contacts {
     padding-left: 175px;
     margin-top: 140px;
+  }
+
+  .contacts__title {
+
+    &::after {
+      top: -10px;
+      left: 64px;
+    }
   }
 
   .contacts__variants {

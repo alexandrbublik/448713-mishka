@@ -1,6 +1,11 @@
 .media {
   width: $mobile-content-width;
   margin-bottom: 58px;
+  position: relative;
+
+  &:hover > .media__description {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 .media__title {
@@ -8,21 +13,31 @@
   font-size: 17px;
   line-height: 24px;
   color: $title-color;
-  box-sizing: border-box;
   margin: 0;
-  padding: 24px 37px 24px 88px;
-  border: 1px solid $border-color;
+  padding: 25px 37px 175px 88px;
   border-bottom: none;
 }
 
 .media__content {
   display: block;
+  position: absolute;
+  top: 98px;
+}
+
+.media__icon {
+  display: block;
+  width: 103px;
+  height: 78px;
+  position: absolute;
+  left: 50%;
+  top: 135px;
+  z-index: 10;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-play.svg");
 }
 
 .media__description {
-  padding: 27px 33px 32px 33px;
   border: 1px solid $border-color;
-  border-top: none;
 }
 
 .media__promo {
@@ -31,32 +46,42 @@
   line-height: 24px;
   color: $text-color;
   margin: 0;
-  padding-right: 5px;
   margin-bottom: 25px;
+  padding: 27px 33px 0 33px;
+}
+
+.media__button {
+  margin: 0 33px 32px 33px;
 }
 
 @media (min-width: $tablet-width) {
   .media {
-    width: $tablet-content-width;
     display: flex;
     flex-direction: column;
+    width: $tablet-content-width;
     margin-bottom: 63px;
   }
 
+  .media__description {
+    padding: 35px 42px;
+    padding-bottom: 44px;
+  }
+
   .media__content {
-    order: 1;
+    position: static;
+    width: 668px;
     height: 455px;
+  }
+
+  .media__icon {
+    top: 190px;
   }
 
   .media__title {
     font-size: 20px;
     order: 2;
-    padding: 38px 41px 20px 105px;
-  }
-
-  .media__description {
-    order: 3;
-    padding: 11px 40px 45px 40px;
+    padding: 0 62px;
+    margin-bottom: 33px;
   }
 
   .media__promo {
@@ -65,12 +90,15 @@
     margin-bottom: 35px;
     padding: 0;
   }
+
+  .media__button {
+    margin: 0;
+  }
 }
 
 
 @media (min-width: $desktop-width) {
   .media {
-    position: relative;
     width: 366px;
     min-height: 455px;
     margin-left: 682px;
@@ -82,7 +110,7 @@
   }
 
   .media__title {
-    padding: 95px 120px 33px 78px;
+    padding: 95px 120px 0 0;
   }
 
   .media__promo {
@@ -94,5 +122,13 @@
     position: absolute;
     top: 0;
     left: -682px;
+  }
+
+  .media__icon {
+    left: -340px;
+  }
+
+  .media__button {
+    margin: 0;
   }
 }
