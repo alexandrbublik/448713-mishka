@@ -69,6 +69,11 @@
 }
 
 @media (min-width: $desktop-width) {
+  .order {
+    width: auto;
+    padding: 0;
+  }
+
   .order__promo {
     box-sizing: border-box;
     width: 700px;

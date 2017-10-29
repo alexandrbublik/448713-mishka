@@ -30,11 +30,12 @@
 @media (min-width: $desktop-width) {
   .main-content {
     width: $desktop-content-width;
+    padding: 0 100px;
   }
 
   .main-content__section {
+    padding: 0;
     border-bottom-width: 23px;
-    padding: 0 100px;
   }
 }
 

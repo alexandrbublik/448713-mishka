@@ -14,3 +14,34 @@
   background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
+
+@media (min-width: $tablet-width) {
+  .user-list {
+    flex-direction: row;
+    width: auto;
+  }
+
+  .user-list__link {
+    padding-top: 30px;
+    padding-bottom: 33px;
+    padding-left: 0;
+    border: none;
+
+    &--search {
+      font-size: 0;
+      width: 84px;
+      border-right: 1px solid #ececec;
+      border-left: 1px solid #ececec;
+    }
+
+    &--basket {
+      padding-left: 82px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-list {
+    order: 3;
+  }
+}
